@@ -65,8 +65,8 @@
 	text-align: left;
 	line-height: 35px;
 }
-/*p2xl*/
-@media (max-width: 768px) {
+/*M2pro*/
+@media (max-width: 490px) {
 	header .colorlib-navbar-brand .colorlib-logo{
 		font-size: 19px;
 		letter-spacing: 2px;
