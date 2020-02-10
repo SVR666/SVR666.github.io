@@ -4,4 +4,6 @@ var typed = new Typed('.typer', {                              //typer is the cl
             typeSpeed: 100,
             backSpeed: 110,
             backDelay: 1000,
+            showCursor: true,
+            cursorChar: "|",
             } );
