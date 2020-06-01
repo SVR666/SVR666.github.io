@@ -1,134 +1,245 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	z-index: 2;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 .particle, .particle > canvas, #particles-js {
-  z-index: -2 !important;
+  z-index: -10 !important;
 }
 
-.cap{
+::-webkit-scrollbar {
+	display: none;
+}
+
+header {
+	position: absolute;
+}
+
+.navbar-logo {
+	margin-top: 2em;
+	margin-left: 1em;
+	float: left;
+}
+
+.logo-full {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: .3vw;
+	display: block;
+	position: relative;
+}
+
+.logo-img {
+	top: 0;
+	left: 0;
+	width: 1.93em;
+	height: 1.93em;
+	border-radius: 50%;
+}
+
+.logo-full:hover {
+	text-decoration: none !important;
+}
+
+.logo-full:active, .logo-full:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.main-box {
+	width: 100vw;
+	height: 100vh;
+}
+
+.typer-text {
 	width: 100%;
-	height: auto;
-  font-size: 60px;
-  padding-top: 40px;
-	padding-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
 	font-weight: 700;
-  text-align: left;
-  color: #ffffff;
+	font-size: 1.9em;
+	letter-spacing: .5vw;
 }
 
-.typ{
-	top: 20%;
-  left: : 50%;
-	padding-top: 10%;
-	padding-bottom: : 5%;
+.typer{
+	overflow: hidden;
+}
+
+.vertically-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.big-about{
 	width: auto;
-	height: 300px;
 	text-align: center;
-}
-
-.aboutsec{
-	margin: 10px 0px;
-	text-align: center;
-}
-
-.aboutsec h1{
-	padding-top: 30px;
-	padding-bottom: 30px;
-	width: auto;
-	height: 100px;
-	text-align: center;
-	z-index: -5;
-	font-size: 120px;
+	font-size: 7em;
 	color: rgba(255, 255, 255, 0.1);
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 }
 
-.aboutsec h2{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 30px;
-	letter-spacing: 7px;
-	height: 100px;
+.center-over-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.aboutsec p{
+.about-me-title {
+	width: 80%;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
-	font-size: 18px;
-	letter-spacing: 2px;
-	text-align: left;
-	line-height: 35px;
+	font-size: 1.5em;
+	letter-spacing: .2em;
 }
-/*p2xl*/
-@media (max-width: 480px) {
-	header .colorlib-navbar-brand .colorlib-logo{
-		font-size: 19px;
-		letter-spacing: 2px;
-		padding-left: 40px;
+
+.about-desc{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #9ea2a1;
+	letter-spacing: .12em;
+	text-align: justify-all;
+	line-height: 2em;
+}
+
+.ftco-footer {
+  font-size: 16px;
+  padding: 8em 0; 
+}
+
+.ftco-footer .ftco-footer-logo {
+    text-transform: uppercase;
+    letter-spacing: .1em; 
+}
+
+.ftco-footer .ftco-footer-widget h2, .ftco-footer .ftco-footer-widget h4 {
+	font-size: 1.3em;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+.ftco-footer .ftco-footer-widget .email a {
+	font-size: .6em;
+    color: #fff; 
+}
+
+.ftco-footer .ftco-footer-widget h2 {
+    font-weight: 700; 
+}
+
+.ftco-footer p {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.ftco-footer a {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.ftco-footer a:hover {
+    color: #fff; 
+}
+
+.ftco-footer .ftco-heading {
+    /*font-size: 24px; */
+}
+
+.ftco-footer .ftco-heading-2 {
+    /*font-size: 18px;*/
+    font-weight: bold;
+    color: #121212; 
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 10px 0;
+  display: inline-block; 
+}
+
+.ftco-footer-social li a {
+    height: 45px;
+    width: 45px;
+    display: block;
+    float: left;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    position: relative; 
+}
+.ftco-footer-social li a span {
+  position: absolute;
+  font-size: 23px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+.ftco-footer-social li a:hover {
+  color: #fff; 
+}
+
+.ftco-footer-social li:nth-child(1) a:hover {
+  color: orange; 
+}
+
+.ftco-footer-social li:nth-child(2) a:hover {
+  color: violet; 
+}
+
+.ftco-footer-social li:nth-child(3) a:hover {
+  color: #007bff; 
+}
+
+
+.ftco-section .ftco-sub-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  color: #d4d4d4;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 2em 0; 
+}
+
+.ftco-section .ftco-primary-title {
+  margin-top: 0;
+  margin-bottom: 30px; 
+}
+
+.ftco-section {
+  padding: 1.5em 0; 
+}
+
+.ftco-footer-social li a span {
+	font-size: 20px;
+}
+.ftco-footer-social li:nth-child(2) a span {
+	font-size: 21px;
+}
+.ftco-footer-social li:nth-child(1) a span {
+    font-size: 22px;
+}
+
+@media (max-width: 992px) {
+	body{
+		font-size: 18px;
 	}
-	header .colorlib-navbar-brand .colorlib-logo .logo-img {
-    width: 35px;
-    height: 35px;
+}
+
+@media (max-width: 768px) {
+	body{
+		font-size: 15px;
 	}
-	.cap{
-		font-size: 30px;
-		padding-top: 80px;
-		padding-bottom: 50px;
-		height: 200px;
-  }
-.typ{
-	height: 200px;
-  }
-	.aboutsec h1{
-		padding-top: 0px;
-		font-size: 80px;
-		height: 39px;
-  }
-	.aboutsec h2{
-		font-size: 20px;
-		letter-spacing: 5px;
-		height: 80px;
-  }
-	.aboutsec p {
-		font-size: 14px;
-		letter-spacing: 0.5px;
-		line-height: 25px;
-	}
-	.ftco-footer-social li a {
-		height: 45px;
-		width: 45px;
-	}
-	.ftco-footer-social li a span {
-	  font-size: 20px;
-	}
-	.ftco-footer-social li:nth-child(2) a span {
-		font-size: 21px;
-	}
-	.ftco-footer-social li:nth-child(1) a span {
-    font-size: 24px;
-	}
-	h2, .h2 {
-    font-size: 1.2rem;
-	}
-	h3, .h3 {
-    font-size: 1.2rem;
-	}
-	.ftco-footer {
-    font-size: 14px;
-	}
-	.ftco-footer-social li {
-	  margin: 0 10px -8px 0;
-	}
-	.ftco-footer-widget .mb-3{
-	    margin-bottom: 0.3rem !important
-	}
-	.ftco-footer .container .mb-4{
-		margin-bottom: 0.2rem !important;
+}
+
+@media (max-width: 576px) {
+	body{
+		font-size: 13px;
 	}
 }
