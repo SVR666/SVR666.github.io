@@ -108,7 +108,7 @@ header {
 }
 
 .ftco-footer {
-  font-size: 16px;
+  font-size: .8em;
   padding: 8em 0; 
 }
 
@@ -160,9 +160,13 @@ header {
   display: inline-block; 
 }
 
+ul{
+	margin-bottom: .5em
+}
+
 .ftco-footer-social li a {
-    height: 45px;
-    width: 45px;
+    height: 3em;
+    width: 3em;
     display: block;
     float: left;
     background: rgba(255, 255, 255, 0.05);
@@ -217,13 +221,13 @@ header {
 }
 
 .ftco-footer-social li a span {
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .ftco-footer-social li:nth-child(2) a span {
-	font-size: 21px;
+	font-size: 1.3em;
 }
 .ftco-footer-social li:nth-child(1) a span {
-    font-size: 22px;
+    font-size: 1.35em;
 }
 
 @media (max-width: 992px) {
